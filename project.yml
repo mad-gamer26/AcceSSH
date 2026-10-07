@@ -1,0 +1,100 @@
+# XcodeGen spec for AcceSSH.xcodeproj. Regenerate with Scripts/generate-project.sh;
+# don't edit the .xcodeproj by hand.
+name: AcceSSH
+options:
+  bundleIdPrefix: com.matthewdovi
+  deploymentTarget:
+    iOS: "18.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+
+settings:
+  base:
+    DEVELOPMENT_TEAM: 5NJK4F832Z
+    CODE_SIGN_STYLE: Automatic
+    SWIFT_VERSION: "6.0"
+    MARKETING_VERSION: "0.1"
+    CURRENT_PROJECT_VERSION: "1"
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    DEAD_CODE_STRIPPING: YES
+
+packages:
+  AcceSSH-Kit:
+    path: Packages/AcceSSH-Kit
+  AcceSSH-Transport:
+    path: Packages/AcceSSH-Transport
+
+targets:
+  AcceSSH-iOS:
+    type: application
+    platform: iOS
+    sources:
+      - path: Apps/Shared
+      - path: Apps/iOS
+    dependencies:
+      - package: AcceSSH-Kit
+        product: AcceSSHCore
+      - package: AcceSSH-Kit
+        product: AcceSSHTerminal
+      - package: AcceSSH-Kit
+        product: AcceSSHAccessibility
+      - package: AcceSSH-Kit
+        product: AcceSSHShellIntegration
+      - package: AcceSSH-Transport
+        product: AcceSSHTransport
+    info:
+      path: Apps/iOS/Info.plist
+      properties:
+        CFBundleDisplayName: AcceSSH
+        CFBundleName: AcceSSH
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        LSRequiresIPhoneOS: true
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: true
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        NSFaceIDUsageDescription: AcceSSH uses Face ID to unlock SSH keys you’ve chosen to protect.
+        NSLocalNetworkUsageDescription: AcceSSH connects to SSH servers on your local network when you ask it to.
+        ITSAppUsesNonExemptEncryption: false
+    settings:
+      base:
+        PRODUCT_NAME: AcceSSH
+        PRODUCT_MODULE_NAME: AcceSSH
+        PRODUCT_BUNDLE_IDENTIFIER: com.matthewdovi.AcceSSH
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SUPPORTS_MACCATALYST: NO
+        GENERATE_INFOPLIST_FILE: NO
+
+  AcceSSH-iOS-UITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: UITests/iOS
+    dependencies:
+      - target: AcceSSH-iOS
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.matthewdovi.AcceSSH.UITests
+        TEST_TARGET_NAME: AcceSSH-iOS
+        GENERATE_INFOPLIST_FILE: YES
+
+schemes:
+  AcceSSH-iOS:
+    build:
+      targets:
+        AcceSSH-iOS: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - AcceSSH-iOS-UITests

@@ -1,0 +1,9 @@
+.DS_Store
+.build/
+.swiftpm/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+Vendor/build/
+Packages/AcceSSH-Transport/Vendor/CLibSSH2.xcframework/
+*.xcresult

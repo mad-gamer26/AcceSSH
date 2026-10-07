@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08EAB031368C885D0060F153 /* AcceSSHAccessibility in Frameworks */ = {isa = PBXBuildFile; productRef = 123AD8210851F16BF25F10D9 /* AcceSSHAccessibility */; };
+		0BC1B37094F96E2CE7DF2C37 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B875E19C8F742C0CDB59DC /* Storage.swift */; };
+		10477895CEDC0DCBC6C5BDCB /* AcceSSHTransport in Frameworks */ = {isa = PBXBuildFile; productRef = 5051D416F772845D35F292F8 /* AcceSSHTransport */; };
+		16A2C26B5CF6560E2BFB9FE4 /* TerminalSettingsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6007E8B8E7FA566F2769E4 /* TerminalSettingsViews.swift */; };
+		35411E28434ABEF19F5DF33D /* ConnectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD694A63935988B358CE744 /* ConnectionUITests.swift */; };
+		368E66FEFAF32FFD2B2C6222 /* PlatformServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A3FE3FC06259F92FCC2195 /* PlatformServices.swift */; };
+		36AEDB9FE7F8B6EDA0A4DAF2 /* AcceSSHTerminal in Frameworks */ = {isa = PBXBuildFile; productRef = 177F535B70F4C184C5EC1C6A /* AcceSSHTerminal */; };
+		47C119185542F12145DB2F0A /* TerminalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A618FF63868F3E0242F745FD /* TerminalViewController.swift */; };
+		4936CCEC31E9D70CCD08F447 /* ShellIntegrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCD1ECE9E1E709EC70CC92A /* ShellIntegrationView.swift */; };
+		49656AFA32143DED8270E957 /* BellSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4777D543551AA33C1914698 /* BellSettingsView.swift */; };
+		4BD2A4978244CDAC2FE0A20C /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2A951F119326A6D2BBA7E6 /* SettingsStore.swift */; };
+		5981F4B7906DEBAE9D0DA715 /* SpeechCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638F12E8848E67B48553757 /* SpeechCoordinator.swift */; };
+		71C142BEFB7A053EDB080E9E /* SecuritySettingsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C270C6671F99EAE0A21694B /* SecuritySettingsViews.swift */; };
+		7F8264859F5DEC9F3EB0E4CA /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBF2039C8DF0E5144B3552F /* SessionView.swift */; };
+		86A7B49266113A295274ACE1 /* HostEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4FEF28A68757D50AC8002C /* HostEditorView.swift */; };
+		87948330241331B7F347F572 /* TerminalSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4EE223CD87C2783D9767F2 /* TerminalSession.swift */; };
+		89EB76AEE569DBE1E8538ED5 /* AccessibilitySettingsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7D8C73A27DEC44C3AAB97B /* AccessibilitySettingsViews.swift */; };
+		968295A7E48C96455834E0E6 /* AcceSSHApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B487A910700E89B64EE4C519 /* AcceSSHApp.swift */; };
+		982E7378793FEA8E1BED8567 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30B3EF3AA1E633835EBC447 /* Feedback.swift */; };
+		9D06EDE1B9420C282E6EC4AF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECAFD19A039074BD951C210 /* SettingsView.swift */; };
+		AA45EFA4AAFB379CC3FD2E1B /* ToolbarSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F1DC2D045D95802FCD654 /* ToolbarSettingsView.swift */; };
+		B18719D10C196C7BB040C55D /* TerminalInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4236DB0B5001C0D2F86A05AC /* TerminalInput.swift */; };
+		B306D954B7C640BF50728FE6 /* TerminalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C202CA6F08D276A6CC4E27 /* TerminalView.swift */; };
+		CC528CA25292AA4B5344B2A4 /* AcceSSHCore in Frameworks */ = {isa = PBXBuildFile; productRef = 16A6A6FAFC7A9186C78E7C11 /* AcceSSHCore */; };
+		DFA4E0F2954245E167D368A0 /* HostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F7C6AD8A2C9341FAE486C9 /* HostListView.swift */; };
+		EA6610AAE2A4686C44471B04 /* AcceSSHShellIntegration in Frameworks */ = {isa = PBXBuildFile; productRef = 2159A2658EA0FD054BC9AE5E /* AcceSSHShellIntegration */; };
+		EB5DC4D7F14B2A41CB15A5FF /* SessionPrompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B2DE445508D718434D1895 /* SessionPrompts.swift */; };
+		F3D14A946ACCA97F907F847C /* SoundLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F613E1ECE77A57B68523DE0D /* SoundLibrary.swift */; };
+		F90C2DBFA95828F7406B41AE /* SettingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECCF2E1B42F3E91B18689B /* SettingsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76E2B5C964CF0522EC80EE75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D347555C6C03B74B5F9150B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEC6A12A968DB394BBB56541;
+			remoteInfo = "AcceSSH-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0ECAFD19A039074BD951C210 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		14CAC31F8BBF3FD8421F4937 /* AcceSSH-Transport */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "AcceSSH-Transport"; path = "Packages/AcceSSH-Transport"; sourceTree = SOURCE_ROOT; };
+		1DCD1ECE9E1E709EC70CC92A /* ShellIntegrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellIntegrationView.swift; sourceTree = "<group>"; };
+		2AD694A63935988B358CE744 /* ConnectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionUITests.swift; sourceTree = "<group>"; };
+		3D6F1DC2D045D95802FCD654 /* ToolbarSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarSettingsView.swift; sourceTree = "<group>"; };
+		3FBF2039C8DF0E5144B3552F /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
+		4236DB0B5001C0D2F86A05AC /* TerminalInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalInput.swift; sourceTree = "<group>"; };
+		44B875E19C8F742C0CDB59DC /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		45B2DE445508D718434D1895 /* SessionPrompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionPrompts.swift; sourceTree = "<group>"; };
+		45F7C6AD8A2C9341FAE486C9 /* HostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostListView.swift; sourceTree = "<group>"; };
+		4E7D8C73A27DEC44C3AAB97B /* AccessibilitySettingsViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilitySettingsViews.swift; sourceTree = "<group>"; };
+		54C202CA6F08D276A6CC4E27 /* TerminalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalView.swift; sourceTree = "<group>"; };
+		5C270C6671F99EAE0A21694B /* SecuritySettingsViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecuritySettingsViews.swift; sourceTree = "<group>"; };
+		5CD821B5474A7BE46C311B30 /* AcceSSH-iOS-UITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "AcceSSH-iOS-UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A4FEF28A68757D50AC8002C /* HostEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostEditorView.swift; sourceTree = "<group>"; };
+		7B2A951F119326A6D2BBA7E6 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		87ECCF2E1B42F3E91B18689B /* SettingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUITests.swift; sourceTree = "<group>"; };
+		8DB6B3B92B7AD0313CA2AED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A4777D543551AA33C1914698 /* BellSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellSettingsView.swift; sourceTree = "<group>"; };
+		A618FF63868F3E0242F745FD /* TerminalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalViewController.swift; sourceTree = "<group>"; };
+		A638F12E8848E67B48553757 /* SpeechCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechCoordinator.swift; sourceTree = "<group>"; };
+		A783C2FBAFB943C777DA5BF1 /* AcceSSH-iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "AcceSSH-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B487A910700E89B64EE4C519 /* AcceSSHApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceSSHApp.swift; sourceTree = "<group>"; };
+		BB4EE223CD87C2783D9767F2 /* TerminalSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalSession.swift; sourceTree = "<group>"; };
+		BF6007E8B8E7FA566F2769E4 /* TerminalSettingsViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalSettingsViews.swift; sourceTree = "<group>"; };
+		D6A3FE3FC06259F92FCC2195 /* PlatformServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformServices.swift; sourceTree = "<group>"; };
+		E7FDC8354FED5481CE44FF48 /* AcceSSH-Kit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "AcceSSH-Kit"; path = "Packages/AcceSSH-Kit"; sourceTree = SOURCE_ROOT; };
+		F30B3EF3AA1E633835EBC447 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
+		F613E1ECE77A57B68523DE0D /* SoundLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundLibrary.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE922FAEF136C5080255501D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC528CA25292AA4B5344B2A4 /* AcceSSHCore in Frameworks */,
+				36AEDB9FE7F8B6EDA0A4DAF2 /* AcceSSHTerminal in Frameworks */,
+				08EAB031368C885D0060F153 /* AcceSSHAccessibility in Frameworks */,
+				EA6610AAE2A4686C44471B04 /* AcceSSHShellIntegration in Frameworks */,
+				10477895CEDC0DCBC6C5BDCB /* AcceSSHTransport in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F386610A284970AE417BED2 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				E7FDC8354FED5481CE44FF48 /* AcceSSH-Kit */,
+				14CAC31F8BBF3FD8421F4937 /* AcceSSH-Transport */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		246831D450F0FBB1AA8BDC8A /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				A6FB46E562CB020FF74B70A2 /* iOS */,
+				F7091FFDB77F329B9D2B3CCD /* Shared */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		4D1D0FA35B5D46DE0DB4520E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F30B3EF3AA1E633835EBC447 /* Feedback.swift */,
+				D6A3FE3FC06259F92FCC2195 /* PlatformServices.swift */,
+				7B2A951F119326A6D2BBA7E6 /* SettingsStore.swift */,
+				F613E1ECE77A57B68523DE0D /* SoundLibrary.swift */,
+				A638F12E8848E67B48553757 /* SpeechCoordinator.swift */,
+				44B875E19C8F742C0CDB59DC /* Storage.swift */,
+				BB4EE223CD87C2783D9767F2 /* TerminalSession.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4FF1256A37A953D66F30434C /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				45B2DE445508D718434D1895 /* SessionPrompts.swift */,
+				3FBF2039C8DF0E5144B3552F /* SessionView.swift */,
+				1DCD1ECE9E1E709EC70CC92A /* ShellIntegrationView.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		6ACAB7B26FE29A1FFFD2B227 /* Terminal */ = {
+			isa = PBXGroup;
+			children = (
+				4236DB0B5001C0D2F86A05AC /* TerminalInput.swift */,
+				54C202CA6F08D276A6CC4E27 /* TerminalView.swift */,
+				A618FF63868F3E0242F745FD /* TerminalViewController.swift */,
+			);
+			path = Terminal;
+			sourceTree = "<group>";
+		};
+		90E413ABB1AC40D12AF41195 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2AD694A63935988B358CE744 /* ConnectionUITests.swift */,
+				87ECCF2E1B42F3E91B18689B /* SettingsUITests.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		9CF80B099999E6ABA828C0CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CD821B5474A7BE46C311B30 /* AcceSSH-iOS-UITests.xctest */,
+				A783C2FBAFB943C777DA5BF1 /* AcceSSH-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6FB46E562CB020FF74B70A2 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6ACAB7B26FE29A1FFFD2B227 /* Terminal */,
+				8DB6B3B92B7AD0313CA2AED5 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		D2EF314426651924E3F04CD5 /* Hosts */ = {
+			isa = PBXGroup;
+			children = (
+				7A4FEF28A68757D50AC8002C /* HostEditorView.swift */,
+				45F7C6AD8A2C9341FAE486C9 /* HostListView.swift */,
+			);
+			path = Hosts;
+			sourceTree = "<group>";
+		};
+		E86E502D0D252D2E462F662F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4E7D8C73A27DEC44C3AAB97B /* AccessibilitySettingsViews.swift */,
+				A4777D543551AA33C1914698 /* BellSettingsView.swift */,
+				5C270C6671F99EAE0A21694B /* SecuritySettingsViews.swift */,
+				0ECAFD19A039074BD951C210 /* SettingsView.swift */,
+				BF6007E8B8E7FA566F2769E4 /* TerminalSettingsViews.swift */,
+				3D6F1DC2D045D95802FCD654 /* ToolbarSettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E8B1E816639D71C63241DDF1 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				90E413ABB1AC40D12AF41195 /* iOS */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		F2759A5B7D00E5C8D4E769C8 = {
+			isa = PBXGroup;
+			children = (
+				246831D450F0FBB1AA8BDC8A /* Apps */,
+				0F386610A284970AE417BED2 /* Packages */,
+				E8B1E816639D71C63241DDF1 /* UITests */,
+				9CF80B099999E6ABA828C0CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7091FFDB77F329B9D2B3CCD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D2EF314426651924E3F04CD5 /* Hosts */,
+				4D1D0FA35B5D46DE0DB4520E /* Services */,
+				4FF1256A37A953D66F30434C /* Session */,
+				E86E502D0D252D2E462F662F /* Settings */,
+				B487A910700E89B64EE4C519 /* AcceSSHApp.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		145C6AB68229678220875363 /* AcceSSH-iOS-UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDE1CA5765BF313B8CF36F1A /* Build configuration list for PBXNativeTarget "AcceSSH-iOS-UITests" */;
+			buildPhases = (
+				B5BC5189ACCCB5340591A48F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18288AD64A7BED19D2548CE2 /* PBXTargetDependency */,
+			);
+			name = "AcceSSH-iOS-UITests";
+			packageProductDependencies = (
+			);
+			productName = "AcceSSH-iOS-UITests";
+			productReference = 5CD821B5474A7BE46C311B30 /* AcceSSH-iOS-UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CEC6A12A968DB394BBB56541 /* AcceSSH-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E07438C2AF1237A5E8ED2691 /* Build configuration list for PBXNativeTarget "AcceSSH-iOS" */;
+			buildPhases = (
+				2518574B8803F64A32E80D03 /* Sources */,
+				FE922FAEF136C5080255501D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AcceSSH-iOS";
+			packageProductDependencies = (
+				16A6A6FAFC7A9186C78E7C11 /* AcceSSHCore */,
+				177F535B70F4C184C5EC1C6A /* AcceSSHTerminal */,
+				123AD8210851F16BF25F10D9 /* AcceSSHAccessibility */,
+				2159A2658EA0FD054BC9AE5E /* AcceSSHShellIntegration */,
+				5051D416F772845D35F292F8 /* AcceSSHTransport */,
+			);
+			productName = "AcceSSH-iOS";
+			productReference = A783C2FBAFB943C777DA5BF1 /* AcceSSH-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D347555C6C03B74B5F9150B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					145C6AB68229678220875363 = {
+						DevelopmentTeam = 5NJK4F832Z;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CEC6A12A968DB394BBB56541;
+					};
+					CEC6A12A968DB394BBB56541 = {
+						DevelopmentTeam = 5NJK4F832Z;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3CFB4339F285ED70EC5902FA /* Build configuration list for PBXProject "AcceSSH" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F2759A5B7D00E5C8D4E769C8;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B3EBDB45FD6AB482849A168F /* XCLocalSwiftPackageReference "Packages/AcceSSH-Kit" */,
+				672424A380036C84125D1F46 /* XCLocalSwiftPackageReference "Packages/AcceSSH-Transport" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9CF80B099999E6ABA828C0CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEC6A12A968DB394BBB56541 /* AcceSSH-iOS */,
+				145C6AB68229678220875363 /* AcceSSH-iOS-UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2518574B8803F64A32E80D03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				968295A7E48C96455834E0E6 /* AcceSSHApp.swift in Sources */,
+				89EB76AEE569DBE1E8538ED5 /* AccessibilitySettingsViews.swift in Sources */,
+				49656AFA32143DED8270E957 /* BellSettingsView.swift in Sources */,
+				982E7378793FEA8E1BED8567 /* Feedback.swift in Sources */,
+				86A7B49266113A295274ACE1 /* HostEditorView.swift in Sources */,
+				DFA4E0F2954245E167D368A0 /* HostListView.swift in Sources */,
+				368E66FEFAF32FFD2B2C6222 /* PlatformServices.swift in Sources */,
+				71C142BEFB7A053EDB080E9E /* SecuritySettingsViews.swift in Sources */,
+				EB5DC4D7F14B2A41CB15A5FF /* SessionPrompts.swift in Sources */,
+				7F8264859F5DEC9F3EB0E4CA /* SessionView.swift in Sources */,
+				4BD2A4978244CDAC2FE0A20C /* SettingsStore.swift in Sources */,
+				9D06EDE1B9420C282E6EC4AF /* SettingsView.swift in Sources */,
+				4936CCEC31E9D70CCD08F447 /* ShellIntegrationView.swift in Sources */,
+				F3D14A946ACCA97F907F847C /* SoundLibrary.swift in Sources */,
+				5981F4B7906DEBAE9D0DA715 /* SpeechCoordinator.swift in Sources */,
+				0BC1B37094F96E2CE7DF2C37 /* Storage.swift in Sources */,
+				B18719D10C196C7BB040C55D /* TerminalInput.swift in Sources */,
+				87948330241331B7F347F572 /* TerminalSession.swift in Sources */,
+				16A2C26B5CF6560E2BFB9FE4 /* TerminalSettingsViews.swift in Sources */,
+				B306D954B7C640BF50728FE6 /* TerminalView.swift in Sources */,
+				47C119185542F12145DB2F0A /* TerminalViewController.swift in Sources */,
+				AA45EFA4AAFB379CC3FD2E1B /* ToolbarSettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5BC5189ACCCB5340591A48F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35411E28434ABEF19F5DF33D /* ConnectionUITests.swift in Sources */,
+				F90C2DBFA95828F7406B41AE /* SettingsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18288AD64A7BED19D2548CE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEC6A12A968DB394BBB56541 /* AcceSSH-iOS */;
+			targetProxy = 76E2B5C964CF0522EC80EE75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		267C5BB1FB100D92FB420F99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5NJK4F832Z;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 0.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		31E45B1E180D3E445D2FA4E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewdovi.AcceSSH;
+				PRODUCT_MODULE_NAME = AcceSSH;
+				PRODUCT_NAME = AcceSSH;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45416AF48A7E49112E1828F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewdovi.AcceSSH;
+				PRODUCT_MODULE_NAME = AcceSSH;
+				PRODUCT_NAME = AcceSSH;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4D1E749AE244D118C9468B2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5NJK4F832Z;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 0.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		AC0A79F1F51C996006730445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewdovi.AcceSSH.UITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AcceSSH-iOS";
+			};
+			name = Debug;
+		};
+		C05387EE575BCB5B35981C0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewdovi.AcceSSH.UITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AcceSSH-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CFB4339F285ED70EC5902FA /* Build configuration list for PBXProject "AcceSSH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D1E749AE244D118C9468B2D /* Debug */,
+				267C5BB1FB100D92FB420F99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BDE1CA5765BF313B8CF36F1A /* Build configuration list for PBXNativeTarget "AcceSSH-iOS-UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0A79F1F51C996006730445 /* Debug */,
+				C05387EE575BCB5B35981C0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E07438C2AF1237A5E8ED2691 /* Build configuration list for PBXNativeTarget "AcceSSH-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31E45B1E180D3E445D2FA4E7 /* Debug */,
+				45416AF48A7E49112E1828F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		672424A380036C84125D1F46 /* XCLocalSwiftPackageReference "Packages/AcceSSH-Transport" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "Packages/AcceSSH-Transport";
+		};
+		B3EBDB45FD6AB482849A168F /* XCLocalSwiftPackageReference "Packages/AcceSSH-Kit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "Packages/AcceSSH-Kit";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		123AD8210851F16BF25F10D9 /* AcceSSHAccessibility */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AcceSSHAccessibility;
+		};
+		16A6A6FAFC7A9186C78E7C11 /* AcceSSHCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AcceSSHCore;
+		};
+		177F535B70F4C184C5EC1C6A /* AcceSSHTerminal */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AcceSSHTerminal;
+		};
+		2159A2658EA0FD054BC9AE5E /* AcceSSHShellIntegration */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AcceSSHShellIntegration;
+		};
+		5051D416F772845D35F292F8 /* AcceSSHTransport */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AcceSSHTransport;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5D347555C6C03B74B5F9150B /* Project object */;
+}
